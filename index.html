@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Reservia</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/4de05780f2.js" crossorigin="anonymous"></script>
+    <title>Reservia</title>
 </head>
 
 <body>
@@ -30,9 +33,9 @@
     
 
     <form role="search">
-        <img src="images/logo/map-marker-alt-solid.svg" alt="Logo de localisation">
-        <input type="search" id="search-form" name="search-form" required placeholder="Ville, pays..." aria-label="rechercher une destination sur le site">
-        <button>Rechercher</button>
+        <span class="fas fa-map-marker-alt"></span>
+        <input type="search" id="search_form" name="search_form" required placeholder="Ville, pays..." aria-label="rechercher une destination sur le site">
+        <button id="search_button">Rechercher</button>
     </form>    
 
     <form>
@@ -40,21 +43,25 @@
             <legend>Filtres</legend>
 
             <input type="button" id="filter_one" name="filter">
+            <span class="fas fa-money-bill-wave"></span>
             <label for="filter_one">Économique</label>
 
             <input type="button" id="filter_one" name="filter">
+            <span class="fas fa-child"></span>
             <label for="filter_two">Familial</label>
 
             <input type="button" id="filter_one" name="filter">
+            <span class="fas fa-heart"></span>
             <label for="filter_three">Romantique</label>
 
             <input type="button" id="filter_one" name="filter">
+            <span class="fas fa-dog"></span>
             <label for="filter_four">Animaux autorisés</label>
         </fieldset>
     </form>
 
     <div>
-        <img href="">
+        <span class="fas fa-info-circle"></span>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 
@@ -64,6 +71,7 @@
         </article>
 
         <article id="hostings_popular">
+            <span class="fas fa-chart-line"></span>
 
         </article>
     </section>
