@@ -1,0 +1,49 @@
+/* Départ sur un viewport de 320px de largeur */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: red;
+    
+}
+.logo {
+    width: 20rem;
+    height: 20rem;
+}
+
+#logo {
+    width: 100%;
+    
+    
+}
+
+.nav_menu {
+    background-color: blue;
+    
+    
+}
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 480px) {
+    
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 1280px) {
+    
+}
+
+@media (min-width: 1920px) {
+    
+}
