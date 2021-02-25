@@ -3,12 +3,36 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-size: 2rem;
+    font-family: 'Raleway', serif;
+    font-size: 1.6rem;
     list-style: none;
 }
-.header {
-    
+
+a{
+    text-decoration: none;
+    outline: none;
 }
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:focus {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
 .container {
     width: 100%;
     height: 15rem;
@@ -19,43 +43,73 @@
 }
 
 .logo {
+    display: flex;
+    
     order: 1;
-    background-color: red;
-    width: 35%;
-    margin-right: 30%;
-    padding: 5% 0 0 5%;
+    width: 50%; 
+    height: 65%;
 }
+
+#logo {
+    background-image: url("../images/logo/Reservia.svg");
+    background-color: red;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 75%;
+    margin: 2.5rem 0 2.5rem 1rem;
+}
+
+.logo > a {
+    /*display: block;*/
+    /*margin-right: 30%;*/
+    /*padding: 5% 0 0 5%;*/
+}
+
 .nav_menu {
     background-color: blue; 
     order: 3;
     width: 100%;
     display:flex;
     flex-wrap: wrap;
-    /*justify-content: center;*/
 }
-.nav_menu ul {
+.nav_menu > ul {
     width: 100%;
     display: flex;
-    /*justify-content: center;*/
-    align-items: center;
+    /*align-items: center;*/
 }
-.nav_menu li {
+.nav_menu > ul > li {
     background-color: violet;
-    /*margin: auto;*/
+    width: 50%;
+    /*height: 100%;*/
+    display: flex;
+}
+
+.nav_menu > ul > li > a {
+    text-align: center;
+    padding: 1em 1em 1em 1em;
     width: 100%;
+    font-size: 1.7rem;
 }
 
 .subscription {
     order: 2;
-    background-color: green;
-    width: 25%;
+    
+    width: 30%;
     /*padding: 10% 2%;*/
-    text-align: center;
-    margin: auto;
+    /*text-align: center;*/
+    /*margin: auto;*/
+    display: flex;
+    justify-content: flex-end;
+    height: 65%
 }
 
-#logo {
-    width: 100%;
+.subscription > a {
+    font-size: 1.9rem;
+    margin: 1em 1em 1em 1em;
+    padding: 1em 0;
+    background-color: green;
 }
 
 @media (min-width: 375px) {
