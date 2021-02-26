@@ -12,8 +12,8 @@
 
 <body>
 
-    <header class="header">
-        <div class="container">
+    <header>
+        <div class="container_header">
             <div class="logo">
                 <a href="index.html" id="logo"></a>
             </div>
@@ -21,8 +21,8 @@
 
         <nav class="nav_menu">
             <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <li><a href="#" class="nav_menu_link">Hébergements</a></li>
+                <li><a href="#" class="nav_menu_link">Activités</a></li>
             </ul>
         </nav>
         <div class="subscription">
@@ -31,19 +31,19 @@
         </div>
     </header>
 
-    <section>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-    </section>
+    <div class="container_search">
+        <section class="search_title">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </section>
     
-
-    <form role="search">
-        <span class="fas fa-map-marker-alt"></span>
+        <form role="search" class="search_form">
+            <div id="search_form_marker"></div>
         <input type="search" id="search_form" name="search_form" required placeholder="Ville, pays..." aria-label="rechercher une destination sur le site">
         <button id="search_button">Rechercher</button>
-    </form>    
+        </form>    
 
-    <form id="filter_form">
+        <form id="filter_form">
         <fieldset>
             <legend>Filtres</legend>
 
@@ -59,11 +59,12 @@
             <span class="fas fa-dog"></span>
             <input type="button" id="filter_four" name="filter" value="Animaux autorisés">  
         </fieldset>
-    </form>
+        </form>
 
-    <div>
+        <div>
         <span class="fas fa-info-circle"></span>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
     </div>
 
     <section id="hostings">

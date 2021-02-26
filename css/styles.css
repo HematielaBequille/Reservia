@@ -4,13 +4,18 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Raleway', serif;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     outline: none;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
 }
 
 a:link {
@@ -18,11 +23,11 @@ a:link {
 }
 
 a:visited {
-
+    color: black;
 }
 
 a:focus {
-
+    
 }
 
 a:hover {
@@ -30,21 +35,20 @@ a:hover {
 }
 
 a:active {
-
+    
 }
 
-.container {
+.container_header {
     width: 100%;
     height: 15rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: yellow;
+    /*background-color: yellow;*/
 }
 
 .logo {
     display: flex;
-    
     order: 1;
     width: 50%; 
     height: 65%;
@@ -52,7 +56,7 @@ a:active {
 
 #logo {
     background-image: url("../images/logo/Reservia.svg");
-    background-color: red;
+    /*background-color: red;*/
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,7 +72,7 @@ a:active {
 }
 
 .nav_menu {
-    background-color: blue; 
+    /*background-color: blue;*/
     order: 3;
     width: 100%;
     display:flex;
@@ -80,10 +84,15 @@ a:active {
     /*align-items: center;*/
 }
 .nav_menu > ul > li {
-    background-color: violet;
+    /*background-color: violet;*/
     width: 50%;
     /*height: 100%;*/
     display: flex;
+    
+}
+
+.nav_menu_link {
+    border-bottom: 0.5rem solid #F2F2F2;
 }
 
 .nav_menu > ul > li > a {
@@ -91,11 +100,17 @@ a:active {
     padding: 1em 1em 1em 1em;
     width: 100%;
     font-size: 1.7rem;
+    font-weight: 300;
+    
+}
+
+.nav_menu > ul a:focus {
+    color: #0065FC;
+    border-bottom: 0.5rem solid #0065FC;
 }
 
 .subscription {
     order: 2;
-    
     width: 30%;
     /*padding: 10% 2%;*/
     /*text-align: center;*/
@@ -107,9 +122,46 @@ a:active {
 
 .subscription > a {
     font-size: 1.9rem;
+    font-weight: 600;
     margin: 1em 1em 1em 1em;
     padding: 1em 0;
-    background-color: green;
+    color: #0065FC;
+    /*background-color: green;*/
+}
+
+.container_search {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+}
+
+.search_title {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search_title h1 {
+    padding-bottom: 1rem;
+}
+
+.search_title p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+
+.search_form {
+    display: flex;
+}
+
+#search_form_marker {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../images/icons/map-marker.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #F2F2F2;
 }
 
 @media (min-width: 375px) {
