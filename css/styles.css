@@ -6,6 +6,7 @@
     font-family: 'Raleway', serif;
     font-size: 1.7rem;
     list-style: none;
+    border-style: none;
 }
 
 a {
@@ -176,6 +177,7 @@ a:active {
 
 .filter_form {
     /*display: flex;*/
+    width: 100%;
 }
 
 .filter_form_fieldset {
@@ -183,9 +185,39 @@ a:active {
     flex-wrap: wrap;*/
 }
 
-.fitler_container {
+.filter_form_fieldset > legend {
+    font-weight: 600;
+}
+
+.filter_container {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    
+}
+
+.filter_thing {
+    display: flex;
+    width: 45%;
+    height: 5rem;
+    margin: 1rem 0 1rem 0;
+    padding: 0 1rem 0 1rem 0;
+}
+
+.filter_thing > span {
+    width: 5rem;
+    border: 0.1rem solid #DEEBFF;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    
+}
+
+.filter_thing > span > input {
+    background-color: #fff;
+    border: 0.2rem solid #F2F2F2;
+    border-left: none;
+    border-radius: 0 10% 10% 0;
+    padding: 0 0 0 2rem;
 }
 
 .fas {
