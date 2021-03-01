@@ -1,5 +1,7 @@
 /* Départ sur un viewport de 320px de largeur */
 
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -109,6 +111,11 @@ a:active {
     border-bottom: 0.5rem solid #0065FC;
 }
 
+.nav_menu > ul a:hover {
+    color: #0065FC;
+    border-bottom: 0.5rem solid #0065FC;
+}
+
 .subscription {
     order: 2;
     width: 30%;
@@ -152,16 +159,39 @@ a:active {
 
 .search_form {
     display: flex;
+    justify-content: center;
+    height: 5rem;
+    width: 100%;
+    
 }
 
 #search_form_marker {
     width: 5rem;
-    height: 5rem;
     background-image: url("../images/icons/map-marker.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 25%;
     background-color: #F2F2F2;
+    flex: 1 2 auto;
+    border-radius: 1.4rem 0 0 1.4rem;
+}
+
+#search_form {
+    flex: 6 3 auto;
+    border: 0.1rem solid #F2F2F2;
+}
+
+#search_button {
+    width: 5rem;
+    background-image: url("../images/icons/search-solid.svg");
+    fill: "white";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    background-color: #0065FC;
+    flex: 1 2 auto;
+    border-radius: 1.4rem;
+    
 }
 
 @media (min-width: 375px) {
