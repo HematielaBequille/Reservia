@@ -40,24 +40,26 @@
         <form role="search" class="search_form">
             <div id="search_form_marker"></div>
         <input type="search" id="search_form" name="search_form" required placeholder="Marseille, France" aria-label="rechercher une destination sur le site">
-        <button id="search_button"></button>
+        <button id="search_button"><span class="fas fa-search"></span></button>
         </form>    
 
-        <form id="filter_form">
-        <fieldset>
+        <form class="filter_form">
+        <fieldset class="filter_form_fieldset">
             <legend>Filtres</legend>
 
-            <span class="fas fa-money-bill-wave"></span>
-            <input type="button" id="filter_one" name="filter" value="Économique">
+            <div class="filter_container">
+                <span class="fas fa-money-bill-wave"></span>
+                <input type="button" id="filter_one" name="filter" value="Économique">
 
-            <span class="fas fa-child"></span>
-            <input type="button" id="filter_two" name="filter" value="Familial">
+                <span class="fas fa-child"></span>
+                <input type="button" id="filter_two" name="filter" value="Familial">
             
-            <span class="fas fa-heart"></span>
-            <input type="button" id="filter_three" name="filter" value="Romantique">
+                <span class="fas fa-heart"></span>
+                <input type="button" id="filter_three" name="filter" value="Romantique">
 
-            <span class="fas fa-dog"></span>
-            <input type="button" id="filter_four" name="filter" value="Animaux autorisés">  
+                <span class="fas fa-dog"></span>
+                <input type="button" id="filter_four" name="filter" value="Animaux autorisés">
+            </div>  
         </fieldset>
         </form>
 

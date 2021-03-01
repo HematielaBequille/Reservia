@@ -1,7 +1,5 @@
 /* Départ sur un viewport de 320px de largeur */
 
-
-
 * {
     margin: 0px;
     padding: 0px;
@@ -46,7 +44,6 @@ a:active {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*background-color: yellow;*/
 }
 
 .logo {
@@ -58,7 +55,6 @@ a:active {
 
 #logo {
     background-image: url("../images/logo/Reservia.svg");
-    /*background-color: red;*/
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,13 +64,10 @@ a:active {
 }
 
 .logo > a {
-    /*display: block;*/
-    /*margin-right: 30%;*/
-    /*padding: 5% 0 0 5%;*/
+    
 }
 
 .nav_menu {
-    /*background-color: blue;*/
     order: 3;
     width: 100%;
     display:flex;
@@ -83,12 +76,9 @@ a:active {
 .nav_menu > ul {
     width: 100%;
     display: flex;
-    /*align-items: center;*/
 }
 .nav_menu > ul > li {
-    /*background-color: violet;*/
     width: 50%;
-    /*height: 100%;*/
     display: flex;
     
 }
@@ -119,9 +109,6 @@ a:active {
 .subscription {
     order: 2;
     width: 30%;
-    /*padding: 10% 2%;*/
-    /*text-align: center;*/
-    /*margin: auto;*/
     display: flex;
     justify-content: flex-end;
     height: 65%
@@ -133,7 +120,6 @@ a:active {
     margin: 1em 1em 1em 1em;
     padding: 1em 0;
     color: #0065FC;
-    /*background-color: green;*/
 }
 
 .container_search {
@@ -162,7 +148,7 @@ a:active {
     justify-content: center;
     height: 5rem;
     width: 100%;
-    
+    margin: 3rem 0;
 }
 
 #search_form_marker {
@@ -183,15 +169,31 @@ a:active {
 
 #search_button {
     width: 5rem;
-    background-image: url("../images/icons/search-solid.svg");
-    fill: "white";
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 35%;
     background-color: #0065FC;
     flex: 1 2 auto;
     border-radius: 1.4rem;
-    
+}
+
+.filter_form {
+    /*display: flex;*/
+}
+
+.filter_form_fieldset {
+    /*display: flex;
+    flex-wrap: wrap;*/
+}
+
+.fitler_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fas {
+    color: #0065FC;
+}
+
+.fa-search {
+    color: #fff;
 }
 
 @media (min-width: 375px) {
