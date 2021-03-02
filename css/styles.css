@@ -191,37 +191,55 @@ a:active {
 
 .filter_container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
-    
 }
 
 .filter_thing {
     display: flex;
-    width: 45%;
+    flex-grow: 1;
     height: 5rem;
-    margin: 1rem 0 1rem 0;
-    padding: 0 1rem 0 1rem 0;
+    margin: 1rem 0 1rem 0; 
 }
 
 .filter_thing > span {
+    display: flex;
+}
+
+.filter {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
     width: 5rem;
+    height: 5rem;
     border: 0.1rem solid #DEEBFF;
     border-radius: 50%;
     background-color: #DEEBFF;
+}
+
+.filter_thing > input {
+    background-color: #fff;
+    padding-left: 6rem;
+    font-weight: 500;
+    border-top: 0.4rem solid #F2F2F2;
+    border-bottom: 0.4rem solid #F2F2F2;
     
 }
 
-.filter_thing > span > input {
-    background-color: #fff;
-    border: 0.2rem solid #F2F2F2;
-    border-left: none;
-    border-radius: 0 10% 10% 0;
-    padding: 0 0 0 2rem;
+.filter_container_circle {
+    align-items: flex-end;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border-right: 0.4rem solid #F2F2F2;
+    
 }
 
 .fas {
     color: #0065FC;
+    text-align: center;
+    margin: auto;
 }
 
 .fa-search {
