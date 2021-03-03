@@ -81,7 +81,6 @@ a:active {
 .nav_menu > ul > li {
     width: 50%;
     display: flex;
-    
 }
 
 .nav_menu_link {
@@ -94,7 +93,6 @@ a:active {
     width: 100%;
     font-size: 1.7rem;
     font-weight: 300;
-    
 }
 
 .nav_menu > ul a:focus {
@@ -176,13 +174,10 @@ a:active {
 }
 
 .filter_form {
-    /*display: flex;*/
     width: 100%;
 }
 
 .filter_form_fieldset {
-    /*display: flex;
-    flex-wrap: wrap;*/
 }
 
 .filter_form_fieldset > legend {
@@ -193,17 +188,17 @@ a:active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 1rem 0;
 }
 
 .filter_thing {
     display: flex;
-    flex-grow: 1;
     height: 5rem;
-    margin: 1rem 0 1rem 0;
-    
-    /*border-radius: 50%;*/
-    /*border-top: 0.4rem solid #F2F2F2;
-    border-bottom: 0.4rem solid #F2F2F2;*/
+    margin: 0 0 1rem 0;
+    border-top: 0.4rem solid #F2F2F2;
+    border-bottom: 0.4rem solid #F2F2F2;
+    border-right: 0.4rem solid #F2F2F2;
+    border-radius: 3rem;
 }
 
 .filter_thing > span {
@@ -211,44 +206,37 @@ a:active {
 }
 
 .filter {
-    display: flex;
-    position: absolute;
+    align-self: center;
     flex-direction: column;
     justify-content: center;
     width: 5rem;
     height: 5rem;
-    /*border: 0.4rem solid #DEEBFF;*/
+    border: 0.4rem solid #DEEBFF;
     border-radius: 50%;
     background-color: #DEEBFF;
     z-index: 2;
 }
 
-.filter_thing > input {
+.filter_button {
     background-color: #fff;
-    padding-left: 6rem;
+    margin: 0 1.5rem;
     font-weight: 500;
-    /*box-shadow: 0 0 0 0.4rem #F2F2F2;*/
-    border-top: 0.4rem solid #F2F2F2;
-    border-bottom: 0.4rem solid #F2F2F2;
     z-index: 1;
 }
 
-.filter_container_circle {
-    /*align-items: flex-end;*/
+/*.filter_container_circle {
     position: absolute;
     z-index: 2;
     width: 5rem;
     height: 5rem;
     margin-left: 13rem;
     box-shadow: 0 0 0 0.4rem #F2F2F2;
-    /*border: 0.4rem solid #F2F2F2;*/
     border-radius: 50%;
-}
+}*/
 
 .fas {
     color: #0065FC;
     text-align: center;
-    margin: auto;
 }
 
 .fa-search {
