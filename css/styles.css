@@ -301,7 +301,6 @@ a:active {
     flex-grow: 1;
     background-color: #FFF;
     justify-content: space-between;
-    
 }
 
 .hostings_popular a figure img {
@@ -311,30 +310,53 @@ a:active {
     flex-shrink: 2;
     flex-basis: 10%;*/
     width: 38%;
-    
 }
 
 /* src="images/hosting/hotel_le_soleil_du_matin_small.jpg" */
-.test {
+.trendy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#img_1 {
+    display: flex;
+    flex-direction: row;
     background-image: url("../images/hosting/hotel_le_soleil_du_matin_small.jpg");
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.test span {
-    display: flex;
-    flex-grow: 1;
+    width: 37%;
     
 }
 
 
 .legend_title {
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     flex-grow: 1;
-    /*flex-grow: 2;
+    padding-left: 13.5rem;
+}
+
+.legend_title > p {
+    flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 10%;*/
-    padding-left: 40%;
+    width: 15rem;
+}
+
+.hosting_title {
+    font-weight: 600;
+    padding: 1rem 3rem 1rem 0;
+    font-size: 1.6 rem;
+}
+
+.hosting_details {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.hosting_details span {
+    font-weight: 500;
 }
 
 .fas {
