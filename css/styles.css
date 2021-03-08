@@ -26,7 +26,7 @@ a:link {
 }
 
 a:visited {
-    color: black;
+    color: #000;
 }
 
 a:focus {
@@ -87,12 +87,12 @@ a:active {
     width: 100%;
 }
 
-.nav_menu > ul a:focus {
+.nav_menu_link:focus {
     color: #0065FC;
     border-bottom: 0.5rem solid #0065FC;
 }
 
-.nav_menu > ul a:hover {
+.nav_menu_link:hover {
     color: #0065FC;
     border-bottom: 0.5rem solid #0065FC;
 }
@@ -395,7 +395,7 @@ a:active {
 
     .logo {
         width: 25%;
-        padding: 0 20em 0 0;
+        padding: 0 10em 0 0;
     }
 
     #logo {
@@ -404,17 +404,39 @@ a:active {
     }
 
     .nav_menu {
-        width: fit-content;
+        width: 30%;
         font-size: 0.3em;
     }
 
     .nav_menu_ul {
+        
+    }
+
+    .nav_menu_ul_li {
+        width: 50%;
+        height: 100%;
         align-items: center;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .nav_menu_link {
+       border: none;
+    }
+
+    .nav_menu_ul_li:hover {
+        border: none;
+        border-top: 0.5em solid #0065FC;
+    }
+
+    .nav_menu_ul_li:focus {
+        border: none;
+        border-top: 0.5em solid #0065FC;
+        
     }
 
     .subscription {
-        width: fit-content;
-        height: 100%;
+        width: 15%;
         order: 2;
         font-size: 0.3em;
         justify-content: flex-end;
