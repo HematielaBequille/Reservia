@@ -18,25 +18,25 @@ a {
     outline: none;
 }
 
-a:link {
+/*a:link {
 
-}
+}*/
 
 a:visited {
     color: #000;
 }
 
-a:focus {
+/*a:focus {
     
-}
+}*/
 
-a:hover {
+/*a:hover {
 
-}
+}*/
 
-a:active {
+/*a:active {
     
-}
+}*/
 
 .container_header {
     display: flex;
@@ -104,9 +104,8 @@ a:active {
 }
 
 .subscription_link {
-    width: 100%;
     margin: auto;
-    font-size: 2.8em;
+    font-size: 3em;
     font-weight: 800;
     color: #0065FC !important;
 }
@@ -379,9 +378,9 @@ a:active {
     align-self: center;
 }
 
-@media (min-width: 480px) {
+/*@media (min-width: 480px) {
     
-}
+}*/
 
 @media (min-width: 600px) {
     .container_header {
@@ -406,16 +405,16 @@ a:active {
         font-size: 2em;
     }
 
-    /*.nav_menu {
+    .nav_menu {
 
-    }*/
+    }
 
-    /*.nav_menu_ul {
+    .nav_menu_ul {
 
-    }*/
+    }
 
     .nav_menu_ul_li {
-        font-size: 2em;
+        font-size: 1.7em;
     }
 }
 
@@ -427,7 +426,7 @@ a:active {
 
     .logo {
         width: 25%;
-        padding: 0 25em 0 0;
+        padding: 0 24em 0 0;
     }
 
     #logo {
@@ -437,7 +436,7 @@ a:active {
 
     .nav_menu {
         width: 25%;
-        font-size: 0.3em;
+        font-size: 0.4em;
     }
 
     /*.nav_menu_ul {
@@ -448,9 +447,9 @@ a:active {
         width: 50%;
         height: 100%;
         align-items: center;
-        margin: 0 0 0 0;
+        margin: 0 1em 0 1em;
         padding: 0 0 0 0;
-        
+        font-size: 1.9em;
     }
 
     .nav_menu_link {
@@ -478,8 +477,12 @@ a:active {
     .subscription {
         width: 10%;
         order: 2;
-        font-size: 0.3em;
         justify-content: flex-end;
+        margin: 0 0 0 1em;
+    }
+
+    .subscription_link {
+        font-size: 0.8em;
     }
 
     h1 {
@@ -494,9 +497,37 @@ a:active {
 }
 
 @media (min-width: 1280px) {
-    
+    .logo {
+        padding: 0 31em 0 0;
+    }
+
+    .nav_menu {
+        font-size: 0.5em;
+    }
+
+    .subscription_link {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 1920px) {
+    .logo {
+        padding: 0 46em 0 0;
+    }
     
+    #logo {
+        height: 4em;
+    }
+
+    .nav_menu {
+        font-size: 0.7em;
+    }
+
+    .subscription {
+        margin: 0 0 0 1.36em;
+    }
+
+    .subscription_link {
+        font-size: 1.3em;
+    }
 }
