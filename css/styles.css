@@ -41,7 +41,8 @@ a:visited {
 .container_header {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: space-between;
+    
     padding: 0 0 0 0;
 }
 
@@ -49,7 +50,6 @@ a:visited {
     display: flex;
     width: 40%;
     order: 0; 
-    margin: 0 7em 0 0;
 }
 
 #logo {
@@ -98,10 +98,8 @@ a:visited {
 
 .subscription {
     display: flex;
-    align-items: stretch;
-    width: 26%;
+    align-items: flex-start;
     order: 1;
-    
 }
 
 .subscription_link {
@@ -137,53 +135,49 @@ a:visited {
 
 .search_form {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 3.5em;
     width: 100%;
     margin: 1em 0;
+    border: 0.1em solid #F2F2F2;
+    border-radius: 1em;
 }
 
 .search_form_marker {
-    width: 15%;
+    width: 4em;
     background-image: url("../images/icons/map-marker.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 28%;
     background-color: #F2F2F2;
+    /*border: 0.1em solid #F2F2F2;*/
     border-radius: 1em 0 0 1em;
 }
 
 .search_form_input {
-    width: 85%;
-    z-index: 1;
     font-size: 1.2em;
     font-weight: 800;
-    border: 0.1em solid #F2F2F2;
-    border-radius: 0 1em 1em 0;
 }
 
 .search_form_input::placeholder {
+    /*text-align: left !important;*/
     padding-left: 0.5em;
     color: #000;
 }
 
 .search_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
+    width: 4em;
     background-color: #0065FC;
-    position: absolute;
-    width: 15%;
-    height: 3.5em;
-    border-radius: 1em;
-    margin-left: 76%;
+    border-radius: 1em 1em 1em 1em;
 }
 
-
+.search_button_change {
+    display: none;
+}
 
 .filter_form {
     display: flex;
+    margin: 1em 0 0 0;
 }
 
 .filter_form_fieldset {
@@ -191,38 +185,35 @@ a:visited {
 }
 
 .filter_form_fieldset > legend {
-    font-size: 3em;
+    font-size: 1.3em;
     font-weight: 800;
 }
 
 .filter_container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
 .filter_thing {
     display: flex;
-    height: 7em;
-    margin: 0 1.5em 1.5em 0;
-    border-top: 0.4em solid #F2F2F2;
-    border-bottom: 0.4em solid #F2F2F2;
-    border-right: 0.4em solid #F2F2F2;
+    margin: 0 0.5em 0.5em 0;
+    border: 0.2em solid #F2F2F2;
+    /*border-bottom: 0.4em solid #F2F2F2;
+    border-right: 0.4em solid #F2F2F2;*/
     border-radius: 3em;
+    z-index: 1;
 }
 
 .filter_thing > span {
-    display: flex;
+    /*display: flex;*/
 }
 
 .filter {
     align-self: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 7em;
-    height: 7em;
-    border: 0.4em solid #DEEBFF;
+    /*flex-direction: column;
+    justify-content: center;*/
+    border: 1em solid #DEEBFF;
     border-radius: 50%;
     background-color: #DEEBFF;
     z-index: 2;
@@ -230,10 +221,10 @@ a:visited {
 
 .filter_button {
     background-color: #FFF;
-    padding: 0.5em 0.5em;
+    margin: 0.9em;
     font-weight: 700;
-    font-size: 2.8em;
-    z-index: 1;
+    font-size: 1.1em;
+    
 }
 
 .hostings_available {
@@ -369,7 +360,6 @@ a:visited {
 .fa-search {
     color: #fff;
     background-color: #0065FC;
-    border-radius: 1em;
 }
 
 .fa-info {
@@ -389,15 +379,7 @@ a:visited {
     align-self: center;
 }
 
-/*@media (min-width: 480px) {
-    
-}*/
-
 @media (min-width: 600px) {
-    .logo {
-        margin: 0 14em 0 0;
-    }
-
     #logo {
         height: 5em;
     }
@@ -414,25 +396,23 @@ a:visited {
         font-size: 1.2em;
     }
 
-    .search_form_marker {
-        width: 10%;
+    .search_form {
+        width: auto;
     }
 
     .search_form_input {
-        width: 90%;
         font-size: 1.3em;
-    }
-
-    .search_button {
-        width: 10%;
-        margin-left: 84.5%;
     }
 }
 
 @media (min-width: 1024px) {
+    .container_header {
+        flex-wrap: nowrap;
+    }
+
     .logo {
         width: 15%;
-        margin: 0 20em 0 0;
+        margin: 0 48% 0 0;
     }
 
     #logo {
@@ -441,7 +421,7 @@ a:visited {
 
     .nav_menu {
         width: 25%;
-        font-size: 0.4em;
+        font-size: 0.75em;
     }
 
     .nav_menu_ul_li {
@@ -450,7 +430,6 @@ a:visited {
         align-items: center;
         margin: 0 1em 0 1em;
         padding: 0 0 0 0;
-        font-size: 1.9em;
         border-top: 0.2em solid #FFF;
     }
 
@@ -474,15 +453,23 @@ a:visited {
         border-top: 0.2em solid #0065FC; 
     }
 
+    .nav_menu_ul_li:active {
+        border-top: 0.2em solid #0065FC; 
+    }
+
     .subscription {
         width: 10%;
         order: 2;
-        justify-content: flex-end;
-        margin: 0 0 0 1em;
+        margin: 0 1em 0 0;
     }
 
     .subscription_link {
-        font-size: 0.8em;
+        font-size: 0.9em;
+    }
+
+    .search_title {
+        flex-direction: column;
+        width: 100%;
     }
 
     h1 {
@@ -491,43 +478,42 @@ a:visited {
     }
 
     .search_title_details {
-        font-size: 0.7em;
-        font-weight: 400;
-    }
-}
-
-@media (min-width: 1280px) {
-    .logo {
-        margin: 0 25em 0 0;
-    }
-
-    .nav_menu {
-        font-size: 0.5em;
-    }
-
-    .subscription_link {
         font-size: 1em;
-    }
-}
-
-@media (min-width: 1920px) {
-    .logo {
-        margin: 0 40em 0 0;
+        font-weight: 500;
     }
 
-    #logo {
-        height: 4em;
+    .search_form {
+        margin: 0;
     }
 
-    .nav_menu {
-        font-size: 0.7em;
+    .search_form_marker {
+        background-size: 25%;
     }
 
-    .subscription {
-        margin: 0 0 0 1.36em;
+    .search_form_input {
+        font-size: 1.2em;
     }
 
-    .subscription_link {
-        font-size: 1.3em;
+    .search_form_input::placeholder {
+        padding-left: 1em;
+    }
+
+    .search_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .fa-search {
+        display: none;
+    }
+
+    .search_button_change {
+        display: initial;
+        background-color: #0065FC;
+        color: #FFF;
+        font-weight: 600;
+        padding: 0 1em 0 1em;
     }
 }
