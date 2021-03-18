@@ -257,97 +257,75 @@ a:visited {
 
 .hostings_popular {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    /*justify-content: space-between;
+    align-items: center;*/
+    background-color: #F2F2F2;
+    padding: 0 1em 0 1em;
+}
+
+.most_popular {
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
+    width: 100%;
+    padding: 2em 0 1em 0;
+    font-size: 1.3em;
+    font-weight: 800;
     background-color: #F2F2F2;
 }
 
-.hostings_popular > h2 {
-    display: flex;
-    justify-content: space-between;
-    padding: 4em 2em 3em 2em;
-    flex-grow: 1;
-    font-size: 2.2em;
-    font-weight: 600;
-}
-
-.hostings_popular a {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    margin: 0 2em 1em 2em;
-    border: 0.5em solid #FFF;
-    border-top-left-radius: 1.5em;
-    border-bottom-left-radius: 1.5em;
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;
-    height: 12em;
-}
-
-.hostings_popular a figure {
-    display: flex;
-    flex-grow: 1;
-    background-color: #FFF;
-    justify-content: space-between;
-}
-
-.hostings_popular a figure img {
-    border-top-left-radius: 1.5em;
-    border-bottom-left-radius: 1.5em;
-    /*flex-grow: 1;
-    flex-shrink: 2;
-    flex-basis: 10%;*/
-    width: 38%;
-}
-
-/* src="images/hosting/hotel_le_soleil_du_matin_small.jpg" */
 .trendy {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    margin: 0 0 0.8em 0;
+    background-color: #F2F2F2;
 }
 
-#img_1 {
+.trendy_link {
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    border: 0.15em solid #FFF;
+    border-radius: 1em;
+    box-shadow: 0 0 0.3em 0.1em lightgray; /* pas certain qu'il y ait une ombre sur la maquette */
+}
+
+.trendy_1 {
+    width: 8em;
+    height: 8em;
     background-image: url("../images/hosting/hotel_le_soleil_du_matin_small.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 37%;
-    
+    background-size: 170%;
+    border: 0.15em solid #FFF;
+    border-radius: 1em 0 0 1em;
 }
-
 
 .legend_title {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-grow: 1;
-    padding-left: 13.5em;
-}
-
-.legend_title > p {
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 15em;
+    justify-content: space-between;
+    margin: 1em 1em 1em 0.8em;
 }
 
 .hosting_title {
-    font-weight: 600;
-    padding: 1em 3em 1em 0;
-    font-size: 1.6em;
+    font-weight: 800;
+    font-size: 0.9em;
 }
 
 .hosting_details {
-    font-weight: 300;
-    font-size: 1.4em;
+    font-weight: 400;
+    font-size: 0.8em;
+    padding: 0 0 2.5em 0;
 }
 
-.hosting_details span {
-    font-weight: 500;
+.price {
+    font-weight: 600;
+}
+
+.trendy_stars {
+    font-size: 0.65em;
 }
 
 .fas {
@@ -362,8 +340,13 @@ a:visited {
 
 .fa-chart-line {
     color: #000;
-    font-size: 2.5em;
+    background-color: #F2F2F2;
+    font-size: 1.1em;
     align-self: center;
+}
+
+.fa-star {
+    /*display: inline;*/
 }
 
 @media (min-width: 600px) {
