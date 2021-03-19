@@ -78,22 +78,23 @@ a:visited {
     text-align: center;
     width: 100%;
     justify-content: center;
+    border-bottom: 0.2em solid #F2F2F2;
+}
+
+.nav_menu_ul_li:focus {
+    color: #0065FC;
+    border-bottom: 0.2em solid #0065FC;
+}
+
+.nav_menu_ul_li:hover {
+    color: #0065FC;
+    border-bottom: 0.2em solid #0065FC;
 }
 
 .nav_menu_link {
-    border-bottom: 0.2em solid #F2F2F2;
+    
     width: 100%;
     padding: 0.7em 0 0.7em 0;
-}
-
-.nav_menu_link:focus {
-    color: #0065FC;
-    border-bottom: 0.2em solid #0065FC;
-}
-
-.nav_menu_link:hover {
-    color: #0065FC;
-    border-bottom: 0.2em solid #0065FC;
 }
 
 .subscription {
@@ -145,18 +146,19 @@ a:visited {
 }
 
 .search_form_marker {
-    width: 4em;
     background-image: url("../images/icons/map-marker.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 28%;
     background-color: #F2F2F2;
     border-radius: 1em 0 0 1em;
+    padding: 0 1.7em 0 1.7em;
 }
 
 .search_form_input {
     font-size: 1.2em;
     font-weight: 800;
+    width: inherit;
 }
 
 .search_form_input::placeholder {
@@ -165,9 +167,9 @@ a:visited {
 }
 
 .search_button {
-    width: 4em;
     background-color: #0065FC;
     border-radius: 1em 1em 1em 1em;
+    padding: 0 1.2em 0 1.2em;
 }
 
 .search_button_change {
@@ -368,7 +370,7 @@ a:visited {
 
     .search_form {
         justify-content: center;
-        width: fit-content;
+        width: max-content;
     }
 
     .search_form_input {
@@ -404,9 +406,10 @@ a:visited {
         margin: 0 1em 0 1em;
         padding: 0 0 0 0;
         border-top: 0.2em solid #FFF;
+        border-bottom: none;
     }
 
-    .nav_menu_link {
+    /*.nav_menu_link {
        border: none;
     }
 
@@ -416,18 +419,18 @@ a:visited {
 
     .nav_menu_link:focus {
         border: none;
-     }
+     }*/
 
     .nav_menu_ul_li:hover {
         border-top: 0.2em solid #0065FC;
+        color: #0065FC;
+        border-bottom: none;
     }
 
     .nav_menu_ul_li:focus {
-        border-top: 0.2em solid #0065FC; 
-    }
-
-    .nav_menu_ul_li:active {
-        border-top: 0.2em solid #0065FC; 
+        border-top: 0.2em solid #0065FC;
+        color: #0065FC;
+        border-bottom: none;
     }
 
     .subscription {
@@ -473,13 +476,14 @@ a:visited {
 
     .search_form_input::placeholder {
         padding-left: 1em;
+        color: #000;
     }
 
     .search_button {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: fit-content;
+        width: max-content;
         border-radius: 0 1em 1em 0;
     }
 
