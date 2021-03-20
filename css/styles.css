@@ -223,10 +223,10 @@ a:visited {
 .hostings_available {
     display: flex;
     align-items: flex-start;
-    margin: 1em 0 0 0;
+    margin: 1em 0 1em 0;
 }
 
-.fa-info {
+.hostings_available_info {
     width: 1em;
     font-size: 0.7em;
     /*border: 0.15em solid #F2F2F2;*/
@@ -249,12 +249,120 @@ a:visited {
     
 }
 
-.hostings_town {
+.hostings_towns {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    /*justify-content: space-between;
+    align-items: center;*/
     order: 1;
+    padding: 0 1em 0 1em;
+    
+}
+
+.hostings_towns_title {
+    margin: 2em 0 1em 0;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+.hosting_card {
+    display: flex;
+    width: 100%;
+    margin: 0 0 1em 0;
+}
+
+.hosting_link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 0.15em solid #FFF;
+    border-radius: 1em;
+    box-shadow: 0 0 0.3em 0.1em lightgray;
+}
+
+.hosting_card_1 {
+    width: 20em;
+    height: 7em;
+    background-image: url("../images/hosting/auberge_la_cannebiere_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+    border: 0.15em solid #FFF;
+    border-radius: 1em;
+}
+
+.hosting_card_2 {
+    width: 20em;
+    height: 7em;
+    background-image: url("../images/hosting/hotel_du_port_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+    border: 0.15em solid #FFF;
+    border-radius: 1em;
+}
+
+.hosting_card_3 {
+    width: 20em;
+    height: 7em;
+    background-image: url("../images/hosting/hotel_les_mouettes_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+    border: 0.15em solid #FFF;
+    border-radius: 1em;
+}
+
+.hosting_card_4 {
+    width: 20em;
+    height: 7em;
+    background-image: url("../images/hosting/hotel_de_la_mer_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+    border: 0.15em solid #FFF;
+    border-radius: 1em;
+}
+
+.hosting_card_5 {
+    width: 20em;
+    height: 7em;
+    background-image: url("../images/hosting/auberge_le_panier_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+    border: 0.15em solid #FFF;
+    border-radius: 1em;
+}
+
+.hosting_card_6 {
+    width: 20em;
+    height: 7em;
+    background-image: url("../images/hosting/hotel_chez_amina_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+    border: 0.15em solid #FFF;
+    border-radius: 1em;
+}
+
+.legend_title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+.hosting_details {
+    font-weight: 400;
+    font-size: 0.8em;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.show_more {
+    font-weight: 800;
+    margin: 1em 0 2em 0;
 }
 
 .hostings_popular {
@@ -263,7 +371,7 @@ a:visited {
     /*justify-content: space-between;
     align-items: center;*/
     background-color: #F2F2F2;
-    padding: 0 1em 0 1em;
+    padding: 0 1em 1em 1em;
 }
 
 .most_popular {
@@ -289,7 +397,7 @@ a:visited {
     width: 100%;
     border: 0.15em solid #FFF;
     border-radius: 1em;
-    box-shadow: 0 0 0.3em 0.1em lightgray; /* pas certain qu'il y ait une ombre sur la maquette */
+    box-shadow: 0 0 0.3em 0.1em lightgray;
 }
 
 .trendy_1 {
@@ -303,7 +411,29 @@ a:visited {
     border-radius: 1em 0 0 1em;
 }
 
-.legend_title {
+.trendy_2 {
+    width: 8em;
+    height: 8em;
+    background-image: url("../images/hosting/au_coeur_de_l_eau_chambres_d_hotes_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+    border: 0.15em solid #FFF;
+    border-radius: 1em 0 0 1em;
+}
+
+.trendy_3 {
+    width: 8em;
+    height: 8em;
+    background-image: url("../images/hosting/hotel_tout_bleu_et_blanc_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    border: 0.15em solid #FFF;
+    border-radius: 1em 0 0 1em;
+}
+
+.legend_title_trendy {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -316,7 +446,7 @@ a:visited {
     font-size: 0.9em;
 }
 
-.hosting_details {
+.hosting_details_trendy {
     font-weight: 400;
     font-size: 0.8em;
     padding: 0 0 2.5em 0;
@@ -326,29 +456,29 @@ a:visited {
     font-weight: 600;
 }
 
-.trendy_stars {
+.cards_stars {
     font-size: 0.65em;
 }
 
-.fas {
+.fas-personal {
     color: #0065FC;
     text-align: center;
 }
 
-.fa-search {
+.search_button_glass {
     color: #fff;
     background-color: #0065FC;
 }
 
-.fa-chart-line {
+.most_popular_chart-line {
     color: #000;
     background-color: #F2F2F2;
     font-size: 1.1em;
     align-self: center;
 }
 
-.fa-star {
-    /*display: inline;*/
+.grey_star {
+    color: lightgrey;
 }
 
 @media (min-width: 600px) {
