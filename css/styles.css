@@ -1,5 +1,11 @@
 /* Départ sur un viewport de 375px de largeur */
 /* margin et padding : 4 valeurs : haut, droit, bas, gauche */
+
+/* Pas de :hover hormis à partir de la media query (min-width:1024px)
+ https://developer.mozilla.org/fr/docs/Web/CSS/:hover
+ "Sur les écrans tactiles, :hover est problématique voire impossible. La pseudo-classe :hover n'est jamais valide, ou seulement pendant un très court instant après avoir touché l'élément."
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -205,6 +211,10 @@ a:visited {
     z-index: 1;
 }
 
+/*.filter_thing:hover {
+    background-color: #DEEBFF;
+}*/
+
 .filter {
     align-self: center;
     border: 1em solid #DEEBFF;
@@ -219,6 +229,10 @@ a:visited {
     margin: 0.9em;
     font-weight: 700;
 }
+
+/*.filter_button:hover {
+    background-color: #DEEBFF;
+}*/
 
 .hostings_available {
     display: flex;
@@ -251,9 +265,10 @@ a:visited {
 
 .hostings_towns {
     display: flex;
-    flex-direction: column;
-    /*justify-content: space-between;
-    align-items: center;*/
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    justify-content: space-between;
+    /*align-items: center;*/
     order: 1;
     padding: 0 1em 0 1em;
     
@@ -263,6 +278,7 @@ a:visited {
     margin: 2em 0 1em 0;
     font-weight: 800;
     font-size: 1.3em;
+    width: 100%;
 }
 
 .hosting_card {
@@ -386,7 +402,6 @@ a:visited {
 
 .trendy {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     margin: 0 0 0.8em 0;
     background-color: #F2F2F2;
@@ -481,7 +496,7 @@ a:visited {
     color: lightgrey;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
     #logo {
         height: 5em;
     }
@@ -505,6 +520,14 @@ a:visited {
 
     .search_form_input {
         font-size: 1.3em;
+    }
+
+    .hosting_link {
+        align-items: center;
+    }
+
+    .hostings_towns_title {
+        text-align: center;
     }
 }
 
@@ -653,5 +676,71 @@ a:visited {
 
     .hostings_available > p {
         align-self: center;
+    }
+
+    .hostings {
+        flex-direction: row;
+    }
+
+    .hostings_towns {
+        order: initial;
+        /*background-color: #F2F2F2;*/
+        background-color: red;
+        margin: 0 1em 0 2em;
+        padding: 0 2em 0 2em;
+        width: 70%;
+    }
+    .hostings_towns_title {
+        text-align: start;
+        background-color: #F2F2F2;
+        font-size: 1em;
+    }
+
+    .hosting_card {
+        width: initial;
+    }
+
+    .hosting_link {
+        align-items: initial;
+    }
+
+    .hosting_card_img {
+        width: 11em;
+        height: 6em;
+    }
+
+    .legend_title {
+        margin: 0.5em 0 0.5em 0.5em;
+        font-size: 0.8em;
+    }
+
+    .show_more {
+        background-color: #F2F2F2;
+        font-size: 0.8em;
+    }
+
+
+
+    .hostings_popular {
+        width: 30%;
+        margin: 0 2em 0 1em;
+        border-radius: 1em;
+    }
+
+    .most_popular {
+        font-size: 1em;
+    }
+
+    .trendy_img {
+        width: 7em;
+        height: 6em; 
+    }
+
+    .trendy_2 {
+        width: 6em;
+    }
+
+    .legend_title_trendy {
+        font-size: 0.8em;
     }
 }
