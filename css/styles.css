@@ -499,6 +499,104 @@ a:visited {
     color: lightgrey;
 }
 
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 1em 1em 1em;
+}
+
+.activities_title {
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 800;
+    margin: 0 0 1em 0;
+}
+
+.activity {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.activity_link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 0 0.3em 0.1em lightgray;
+    border-radius: 1em 1em 1em 1em;
+    margin: 0 0 1em 0;
+}
+
+.activity_title {
+    display: flex;
+    font-weight: 800;
+    font-size: 0.85em;
+    margin: 1.5em 0 1em 1em;
+    width: 50%;
+}
+
+.activity_1 {
+    width: 20.5em;
+    height: 8em;
+    background-image: url("../images/activity/vieux_port_small.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -1em;
+    background-size: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.activity_2 {
+    width: 20.5em;
+    height: 8em;
+    background-image: url("../images/activity/fort_de_pomegues_small.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -9.8em;
+    background-size: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.activity_3 {
+    width: 20.5em;
+    height: 8em;
+    background-image: url("../images/activity/iles_du_frioul_small.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -1em;
+    background-size: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.activity_4 {
+    width: 20.5em;
+    height: 8em;
+    background-image: url("../images/activity/parc_national_des_calanques_small.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -1.2em;
+    background-size: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.activity_5 {
+    width: 20.5em;
+    height: 8em;
+    background-image: url("../images/activity/notre_dame_de_la_garde_small.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -1em;
+    background-size: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.activity_6 {
+    width: 20.5em;
+    height: 8em;
+    background-image: url("../images/activity/parc_longchamp_small.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -2em;
+    background-size: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
 @media (min-width: 600px) {
     #logo {
         height: 5em;
