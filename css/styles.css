@@ -630,6 +630,59 @@ a:visited {
     .hostings_towns_title {
         text-align: center;
     }
+
+    .activities {
+        
+    }
+
+    .activity {
+        flex-direction: row;
+        width: max-content;
+        height: max-content;
+        margin: 0 1em 0 0;
+    }
+
+    .activity_link {
+        flex-direction: column;
+        margin: 0 0 0.1em 0;
+    }
+
+    .activity_title {
+        width: max-content;
+    }
+
+    .activity_1 {
+        width: 14em;
+        height: 18em;
+        background-position: top;
+        background-size: 220%;
+    }
+
+    .activity_2 {
+        width: 13em;
+        height: 9em;
+        background-position: 0 -3.5em;
+        background-size: 100%;
+    }
+
+    .activity_3 {
+        width: 13em;
+        height: 4.5em;
+        background-position: 0 -1em;
+        background-size: 100%;
+    }
+
+    .activity_4 {
+        
+    }
+
+    .activity_5 {
+        
+    }
+
+    .activity_6 {
+        
+    }
 }
 
 @media (min-width: 1024px) {
