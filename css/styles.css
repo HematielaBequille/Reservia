@@ -272,9 +272,9 @@ a:visited {
 .hostings_towns {
     display: flex;
     flex-wrap: wrap;
-    /*flex-direction: column;*/
+    flex-direction: column;
     justify-content: space-between;
-    /*align-items: center;*/
+    align-items: center;
     order: 1;
     padding: 0 1em 0 1em;
     
@@ -289,7 +289,7 @@ a:visited {
 
 .hosting_card {
     display: flex;
-    width: 100%;
+    width: 20.6em;
     margin: 0 0 1em 0;
 }
 
@@ -390,17 +390,18 @@ a:visited {
 .hostings_popular {
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-between;
-    align-items: center;*/
+    flex-direction: column;
+    align-items: center;
     background-color: #F2F2F2;
     padding: 0 1em 1em 1em;
+    width: 100%;
 }
 
 .most_popular {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 2em 0 1em 0;
+    width: 16em;
+    margin: 2em 1em 1em 1em;
     font-size: 1.3em;
     font-weight: 800;
     background-color: #F2F2F2;
@@ -408,8 +409,7 @@ a:visited {
 
 .trendy {
     display: flex;
-    width: 100%;
-    max-width: 257px;
+    width: 20.6em;
     margin: 0 0 0.8em 0;
     background-color: #F2F2F2;
 }
@@ -507,6 +507,15 @@ a:visited {
     display: flex;
     flex-wrap: wrap;
     margin: 1em 1em 1em 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activities_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .activities_title {
@@ -518,7 +527,7 @@ a:visited {
 
 .activity {
     display: flex;
-    width: 100%;
+    width: 20.5em;
     flex-direction: column;
 }
 
@@ -527,7 +536,6 @@ a:visited {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
     box-shadow: 0 0 0.3em 0.1em lightgray;
     border-radius: 1em 1em 1em 1em;
     margin: 0 0 1em 0;
@@ -538,7 +546,6 @@ a:visited {
     font-weight: 800;
     font-size: 0.85em;
     margin: 1.5em 0 1em 1em;
-    width: 50%;
 }
 
 .activity_1 {
@@ -628,7 +635,7 @@ a:visited {
     }
 
     .hosting_link {
-        align-items: center;
+        /*align-items: center;*/
     }
 
     .hostings_towns_title {
@@ -639,11 +646,62 @@ a:visited {
         
     }
 
+    .activities_container {
+        display: grid;
+        grid-template-columns: repeat(2, 13.2em);
+        grid-template-rows: 1em 9.3em 9.3em 9.3em 9.3em;
+        column-gap: 2em;
+        row-gap: 2em;
+        max-width: 61em;
+    }
+
+    .activities_title {
+        margin: 0;
+        text-align: center;
+        width: 22em;
+    }
+
     .activity {
         flex-direction: row;
         width: max-content;
         height: max-content;
-        margin: 0 1em 0 0;
+        margin: 0;
+    }
+
+    .activity__1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        align-self: start;
+    }
+
+    .activity__2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        align-self: start;
+    }
+
+    .activity__3 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        align-self: end;
+    }
+
+    .activity__4 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        align-self: start;
+    }
+
+    .activity__5 {
+        grid-column-start: 2;
+        grid-row-start: 4;
+        align-self: start;
+    }
+
+    .activity__6 {
+        grid-column-start: 2;
+        grid-row-start: 5;
+        align-self: end;
     }
 
     .activity_link {
@@ -656,36 +714,39 @@ a:visited {
     }
 
     .activity_1 {
-        width: 14em;
-        height: 18em;
+        width: 13em;
+        height: 17.5em;
         background-position: top;
         background-size: 220%;
     }
 
     .activity_2 {
         width: 13em;
-        height: 9em;
+        height: 8em;
         background-position: 0 -3.5em;
         background-size: 100%;
     }
 
     .activity_3 {
         width: 13em;
-        height: 4.5em;
+        height: 5em;
         background-position: 0 -1em;
         background-size: 100%;
     }
 
     .activity_4 {
-        
+        width: 13em;
+        height: 17.5em;
     }
 
     .activity_5 {
-        
+        width: 13em;
+        height: 6em;
     }
 
     .activity_6 {
-        
+        width: 13em;
+        height: 7em;
     }
 }
 
@@ -843,6 +904,7 @@ a:visited {
     }
 
     .hostings_towns {
+        flex-direction: row;
         order: initial;
         background-color: #F2F2F2;
         margin: 0 1em 0 2em;
@@ -936,6 +998,7 @@ a:visited {
     .activities_title {
         font-size: 1em;
         margin: 0;
+        text-align: start;
     }
 
     .activity {
