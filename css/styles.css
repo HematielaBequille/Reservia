@@ -308,7 +308,7 @@ a:visited {
     background-image: url("../images/hosting/auberge_la_cannebiere_small.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 105%;
+    background-size: 102%;
     border: 0.15em solid #FFF;
     border-radius: 1em;
 }
@@ -319,7 +319,7 @@ a:visited {
     background-image: url("../images/hosting/hotel_du_port_small.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 105%;
+    background-size: 103%;
     border: 0.15em solid #FFF;
     border-radius: 1em;
 }
@@ -352,7 +352,7 @@ a:visited {
     background-image: url("../images/hosting/auberge_le_panier_small.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 105%;
+    background-size: 103%;
     border: 0.15em solid #FFF;
     border-radius: 1em;
 }
@@ -363,7 +363,7 @@ a:visited {
     background-image: url("../images/hosting/hotel_chez_amina_small.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 105%;
+    background-size: 103%;
     border: 0.15em solid #FFF;
     border-radius: 1em;
 }
@@ -450,7 +450,7 @@ a:visited {
     background-image: url("../images/hosting/hotel_tout_bleu_et_blanc_small.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 110%;
+    background-size: 105%;
     border: 0.15em solid #FFF;
     border-radius: 1em 0 0 1em;
 }
@@ -553,7 +553,7 @@ a:visited {
     height: 8em;
     background-image: url("../images/activity/vieux_port_small.jpg");
     background-repeat: no-repeat;
-    background-position: 0 -1em;
+    background-position: 0 -1.2em;
     background-size: 100%;
     border-radius: 1em 1em 0 0;
 }
@@ -573,7 +573,7 @@ a:visited {
     height: 8em;
     background-image: url("../images/activity/iles_du_frioul_small.jpg");
     background-repeat: no-repeat;
-    background-position: 0 -1em;
+    background-position: 0 -1.2em;
     background-size: 100%;
     border-radius: 1em 1em 0 0;
 }
@@ -603,7 +603,7 @@ a:visited {
     height: 8em;
     background-image: url("../images/activity/parc_longchamp_small.jpg");
     background-repeat: no-repeat;
-    background-position: 0 -2em;
+    background-position: 0 -2.1em;
     background-size: 100%;
     border-radius: 1em 1em 0 0;
 }
@@ -769,6 +769,8 @@ a:visited {
     .activity_4 {
         width: 13em;
         height: 17.5em;
+        background-position: top;
+        background-size: 220%;
     }
 
     .activity_5 {
@@ -997,7 +999,7 @@ a:visited {
         width: 30%;
         max-width: 20em;
         margin: 0 2em 0 1em;
-        padding: 0 2em 1em 2em;
+        padding: 0 1em 1em 1em;
         border-radius: 1em;
         justify-content: center;
     }
@@ -1008,7 +1010,7 @@ a:visited {
     }
 
     .trendy {
-        /*width: 16em;*/
+        width: 16em;
     }
 
     .trendy_img {
@@ -1055,36 +1057,31 @@ a:visited {
     }
 
     .activity_1 {
-        width: 13em;
         height: 17em;
     }
 
     .activity_2 {
-        width: 13em;
-        height: 8em;
         background-position: 0 -4.5em;
     }
 
     .activity_3 {
-        width: 13em;
-        height: 5em;
+        background-position: 0 -0.5em ;
+        background-size: 100%;
     }
 
     .activity_4 {
-        width: 13em;
         height: 17em;
-        background-position: 0 1em ;
-        background-size: 220%;
+        background-position: -7.5em 0em ;
+        background-size: 214%;
     }
 
     .activity_5 {
-        width: 13em;
-        height: 6em;
+        background-position: -0.2em 0em ;
+        background-size: 102%;
     }
     
     .activity_6 {
-        width: 13em;
-        height: 7em;
+        background-position: 0em 0em ;
     }
     
     .activity__1 {
